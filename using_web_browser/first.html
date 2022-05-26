@@ -6,10 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>find Browser</title>
+
+    <!-- add css file -->
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
 
+    <div class="wrapper">
+        <h2 class="cent">Browser :</h2>
+
+        <div class="logos">
+
+            <img class="chrome" src="images/chrome.jfif" alt="chrome" title="Google Chrome">
+            <img class="firfox" src="images/firefox.jfif" alt="firfox" title="Mozila Firfox">
+            <img class="edge" src="images/microsoft edge.jfif" alt="edge" title="Microsoft Edge">
+            <img class="opera" src="images/opera mini.jfif" alt="opera" title="Opera Mini">
+            <img class="safari" src="images/safari.jfif" alt="safari" title="Apple Safari">
+
+        </div>
+    </div>
+
+    <script>
+        let userAgent = navigator.userAgent;
+        // console.log(userAgent);
+        let Browser;
+        if (userAgent.match(/edg/i)) {
+            Browser = "edge";
+        } else if (userAgent.match(/firefox|fxios/i)) {
+            Browser = "firfox";
+        } else if (userAgent.match(/opr/i)) {
+            Browser = "opera";
+        } else if (userAgent.match(/chrome|chromium|crios/i)) {
+            Browser = "chrome";
+        } else if (userAgent.match(/safari/i)) {
+            Browser = "safari";
+        } else {
+            alert("other browser");
+        }
+
+        const logo = document.querySelector(`.logos .${Browser}`);
+        // console.log(logo);
+        if (logo != "") {
+            logo.style.opacity = 1;
+        }
+    </script>
 </body>
 
 </html>
