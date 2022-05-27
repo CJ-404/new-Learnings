@@ -1,5 +1,7 @@
 let hidden_div = document.querySelector(".location");
 let header = document.querySelector("h1");
+var key = API_KEY;
+
 
 document.querySelector(".wrapper").addEventListener("click", function() {
 
@@ -22,10 +24,17 @@ document.querySelector(".wrapper").addEventListener("click", function() {
 })
 
 function showPosition(position) {
-    console.log(position);
+    // console.log(position);
     let { latitude, longitude } = position.coords;
     // hidden_div.innerHTML = "Your Location is : " + position.coords.latitude + "<br>Longitude : " + position.coords.longitude;
-    // https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=YOUR-API-KEY
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${API_KEY}`)
+        .then(response => response.json()).then(result => {
+            let AllDetails = result.results[0].components;
+            // console.log(AllDetails);
+            let { city, continent, road, state, postcode, country } = AllDetails;
+            // console.log(city, continent, road, state, postcode, country);
+            hidden_div.innerHTML = "<strong>Your Location is :</strong> <br><br>Road :" + road + "<br>City :" + city + "<br>postcode :" + postcode + "<br>state :" + state + "<br>country :" + country + "<br>Continent :" + continent;
+        })
 }
 
 function showError(error) {
