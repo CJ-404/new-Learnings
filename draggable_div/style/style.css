@@ -1,0 +1,79 @@
+/* import google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    /* display: flex; */
+    background: #6f36ff;
+}
+
+.wrapper {
+    background-color: white;
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1.4);
+    /* border: 3px solid green; */
+}
+
+.wrapper header {
+    text-align: center;
+    justify-content: center;
+    color: green;
+    font-size: 23px;
+    padding: 15px 30px;
+    font-weight: 500;
+    border-bottom: 2px solid green;
+}
+
+.wrapper .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.content .icon {
+    margin: auto;
+    padding: 0 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+
+.content .icon i {
+    font-size: 60px;
+    color: green;
+}
+
+.content .title {
+    color: green;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0;
+    padding: 0 20px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+.content p {
+    color: green;
+    margin: 10px 0 0;
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
