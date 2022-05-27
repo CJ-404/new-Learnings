@@ -34,6 +34,11 @@ body {
     border-bottom: 2px solid green;
 }
 
+.wrapper header.active {
+    cursor: move;
+    user-select: none;
+}
+
 .wrapper .content {
     display: flex;
     flex-direction: column;
