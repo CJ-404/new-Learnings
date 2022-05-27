@@ -15,8 +15,7 @@ body {
 }
 
 .hidden {
-    position: absolute;
-    visibility: hidden;
+    color: aliceblue;
 }
 
 .wrapper {
@@ -29,8 +28,8 @@ body {
     align-items: center;
 }
 
-.location {
+.wrapper h1 {
     font-size: 1.5rem;
-    color: aliceblue;
+    /* color: aliceblue; */
     text-align: left;
 }
