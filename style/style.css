@@ -1,15 +1,20 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-style: italic;
-    color: darkblue;
-}
-
-.custom {
-    display: inline-block;
-}
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    .link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-style: italic;
+        color: darkblue;
+    }
+    
+    .custom {
+        display: inline-block;
+    }
+    
+    .custom li {
+        text-align: left;
+        padding-left: 15px;
+    }
