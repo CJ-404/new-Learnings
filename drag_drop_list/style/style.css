@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
     font-family: monospace;
 }
 
@@ -10,5 +11,31 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(blue, pink);
+    background: linear-gradient( lightblue, lightgreen);
+}
+
+.wrapper {
+    width: 550px;
+    position: relative;
+    background-color: lightgoldenrodyellow;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.wrapper .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    background-color: darkblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+.content .lines {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
 }
