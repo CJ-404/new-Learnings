@@ -120,11 +120,11 @@ body {
 }
 
 .four {
-    animation: rotatefour 2s ease infinite backwards;
+    animation: rotatefour 2s ease infinite;
 }
 
 .five {
-    animation: rotatefive 2s ease infinite backwards;
+    animation: rotatefive 2s ease infinite;
 }
 
 .on {
