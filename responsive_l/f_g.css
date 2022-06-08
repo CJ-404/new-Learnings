@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    /* flex-direction: column; */
+    font-size: 6vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1000px;
+    height: 500px;
+    /* background-color: gray; */
+    margin: 0 30px;
+    /* animation: rotate 10s ease-in-out infinite 1s; */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        /* transform: rotateY(180deg); */
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    border: 5px solid white;
+    color: white;
+    font-size: 6vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* animation: scale 10s ease-in-out infinite 1s; */
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wrapper_one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.wrapper_two {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-grow: 1; */
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-grow: 2; */
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.container6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.container7 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/* change sizes */
+
+.one {
+    height: 100px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.three {
+    height: 300px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.four {
+    height: 100px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.five {
+    height: 200px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.seven {
+    height: 100px;
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.eight {
+    height: 100px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.nine {
+    height: 100px;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.ten {
+    height: 100px;
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+
+/* grid  */
+
+.gbox {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+.grid {
+    display: grid;
+    height: 500px;
+    background-color: white;
+    width: 70%;
+    grid-gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-template-areas: "g1 g2 g3" "g4 g5 g3" "g6 g5 g3" "g7 g7 g8" "g9 g10 g10";
+}
+
+.g1 {
+    background-color: black;
+    grid-area: g1;
+}
+
+.g2 {
+    background-color: violet;
+    grid-area: g2;
+}
+
+.g3 {
+    background-color: aqua;
+    grid-area: g3;
+}
+
+.g4 {
+    background-color: blueviolet;
+    grid-area: g4;
+}
+
+.g5 {
+    background-color: blue;
+    grid-area: g5;
+}
+
+.g6 {
+    background-color: brown;
+    grid-area: g6;
+}
+
+.g7 {
+    background-color: burlywood;
+    grid-area: g7;
+}
+
+.g8 {
+    background-color: coral;
+    grid-area: g8;
+}
+
+.g9 {
+    background-color: yellow;
+    grid-area: g9;
+}
+
+.g10 {
+    background-color: gray;
+    grid-area: g10;
+}
